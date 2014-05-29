@@ -59,9 +59,16 @@
 			echo "<pre>" . $this->querystring . "</pre>";
 		}
 
+		// custom 
 		public function custom() {
 			$args = func_get_args();
 			$this->querystring .= $args[0];
+		}
+
+		// limit
+		public function limit() {
+			$args = func_get_args();
+			$this->querystring .= " LIMIT " . $args[0];
 		}
 
 
@@ -159,7 +166,7 @@
 
 		}
 
-		// fields
+		// set
 		public function set() {
 			$args = func_get_args();
 			$argslength = count($args);
