@@ -25,7 +25,7 @@ $results = $db->getResults();
 $db->select('name');
 $db->from('people');
 $db->where('name = ? AND gender = ?');
-$db->execute(array('bob', 'male'));
+$db->execute(array('Dave', 'male'));
 
 $result = $db->getResult();
 ```
