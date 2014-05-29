@@ -9,6 +9,15 @@ Create a new instance of the class
 $db = new Derb;
 ```
 
+Create a new instance of the class
+```
+$db = new Derb;
+```
+
+Create a new instance of the class
+```
+$db = new Derb;
+```
 
 Select (Multiple)
 ```php
