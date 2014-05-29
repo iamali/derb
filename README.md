@@ -4,7 +4,7 @@ A PHP database connection class.
 
 ## To begin...
 
-Set your database details somewhere
+Set your database details
 
 ```
 define("DB_HOST", "localhost");
