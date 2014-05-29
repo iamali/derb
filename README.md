@@ -1,4 +1,4 @@
-# derb
+# Derb
 
 A PHP database connection class.
 
