@@ -51,3 +51,10 @@ $db->set('name', 'gender');
 $db->where('id = ?');
 $db->execute(array('Ali', 'female', '1'));
 ```
+
+**Custom**
+```
+$db->custom('SELECT name from people WHERE name = ?');
+$db->execute(array('Ali'));
+$results = $db->getResult();
+```
