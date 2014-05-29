@@ -9,7 +9,7 @@ Create a new instance of the class
 $db = new Derb;
 ```
 
-###### Select (Multiple)
+Select (Multiple)
 ```php
 $db->select('p.name as personname', 'p.gender', 'f.name as familyname');
 $db->from('people as p');
@@ -20,7 +20,7 @@ $db->execute();
 $results = $db->getResults();
 ```
 
-###### Select (Single)
+Select (Single)
 ```php
 $db->select('name');
 $db->from('people');
@@ -30,21 +30,21 @@ $db->execute(array('bob', 'male'));
 $result = $db->getResult();
 ```
 
-###### Insert
+Insert
 ```php
 $db->insert('people');
 $db->fields('name', 'gender');
 $db->execute(array(':name'=>'Bob', ':gender'=>'male'));
 ```
 
-###### Delete
+Delete
 ```php
 $db->delete('people');
 $db->where('name = ?');
 $db->execute(array('Bob2'));
 ```
 
-###### Update
+Update
 ```php
 $db->update('people');
 $db->set('name', 'gender');
