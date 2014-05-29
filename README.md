@@ -9,18 +9,8 @@ Create a new instance of the class
 $db = new Derb;
 ```
 
-Create a new instance of the class
-```
-$db = new Derb;
-```
-
-Create a new instance of the class
-```
-$db = new Derb;
-```
-
 Select (Multiple)
-```php
+```
 $db->select('p.name as personname', 'p.gender', 'f.name as familyname');
 $db->from('people as p');
 $db->join('family as f', 'f.personid = p.id');
@@ -31,7 +21,7 @@ $results = $db->getResults();
 ```
 
 Select (Single)
-```php
+```
 $db->select('name');
 $db->from('people');
 $db->where('name = ? AND gender = ?');
@@ -39,6 +29,7 @@ $db->execute(array('bob', 'male'));
 
 $result = $db->getResult();
 ```
+
 
 Insert
 ```php
