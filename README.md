@@ -1,6 +1,6 @@
 # Derb
 
-A PHP database connection class.
+A PHP MySQL database connection class.
 
 ## To begin...
 
