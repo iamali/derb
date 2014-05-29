@@ -1,4 +1,7 @@
-derb
-====
+# derb
 
-PHP database connection class
+A PHP database connection class.
+
+## Useage
+
+###### Select
