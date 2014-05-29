@@ -4,6 +4,12 @@ A PHP database connection class.
 
 ## Useage
 
+When it comes to deploying to a web server you don't want to rely on grunt and node.js availability.
+ 
+```
+$ yo gf-presentation
+```
+
 Create a new instance of the class
 ```php
 $db = new Derb;
