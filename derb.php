@@ -18,7 +18,8 @@
 			try {
 			    $this->connection = new PDO($db, $this->username, $this->password, $options);
 			} catch (PDOException $e) {
-			    $this->error = $e->getMessage();
+			    echo "<p>" . $e->getMessage() . "</p>";
+			    exit();
 			}
 		}
 
