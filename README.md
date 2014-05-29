@@ -30,23 +30,22 @@ $db->execute(array('bob', 'male'));
 $result = $db->getResult();
 ```
 
-
 Insert
-```php
+```
 $db->insert('people');
 $db->fields('name', 'gender');
 $db->execute(array(':name'=>'Bob', ':gender'=>'male'));
 ```
 
 Delete
-```php
+```
 $db->delete('people');
 $db->where('name = ?');
 $db->execute(array('Bob2'));
 ```
 
 Update
-```php
+```
 $db->update('people');
 $db->set('name', 'gender');
 $db->where('id = ?');
