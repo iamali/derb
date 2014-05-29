@@ -4,6 +4,11 @@ A PHP database connection class.
 
 ## Useage
 
+Create a new instance of the class
+```php
+$db = new Derb;
+```
+
 ###### Select (Multiple)
 ```php
 $db->select('p.name as personname', 'p.gender', 'f.name as familyname');
