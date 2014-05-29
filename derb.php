@@ -12,11 +12,12 @@
 		private $password = DB_PASS;
 
 		public function __construct() {
-			$db = 'mysql:host=' . $this->host . ';dbname=' . $this->dbname;
+			$dsn = "mysql:host=" . $this->host . ";dbname=" . $this->dbname. ";charset=utf8";
 			$options = array( PDO::ATTR_PERSISTENT => true, PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION );
 
 			try {
-			    $this->connection = new PDO($db, $this->username, $this->password, $options);
+			    $this->connection = new PDO($dsn, $this->username, $this->password, $options);
+			    $this->connection->exec("set names utf8");
 			} catch (PDOException $e) {
 			    echo "<p>" . $e->getMessage() . "</p>";
 			    exit();
@@ -36,12 +37,12 @@
 
 		// get all results
 		public function getResults() {
-		    return $this->stmt->fetchAll(PDO::FETCH_ASSOC);
+		    return $this->stmt->fetchAll();
 		}
 
 		// get single result
 		public function getResult() {
-		    return $this->stmt->fetch(PDO::FETCH_ASSOC);
+		    return $this->stmt->fetch();
 		}
 
 		// get number of rows
@@ -178,5 +179,7 @@
 				$i++;
 			}
 		}
+
+
 	}
 ?>
