@@ -41,7 +41,7 @@ $db->execute(array(':name'=>'Bob', ':gender'=>'male'));
 ```
 $db->delete('people');
 $db->where('name = ?');
-$db->execute(array('Bob2'));
+$db->execute(array('Bob'));
 ```
 
 **Update**
