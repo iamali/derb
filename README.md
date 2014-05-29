@@ -4,6 +4,15 @@ A PHP database connection class.
 
 ## To begin...
 
+Set your database details up somewhere
+
+```
+	define("DB_HOST", "localhost");
+	define("DB_NAME", "databasename");
+	define("DB_USER", "username");
+	define("DB_PASS", "password");
+```
+
 Create a new instance of the class
 ```
 $db = new Derb;
