@@ -56,5 +56,5 @@ $db->execute(array('Ali', 'female', '1'));
 ```
 $db->custom('SELECT name from people WHERE name = ?');
 $db->execute(array('Ali'));
-$results = $db->getResult();
+$result = $db->getResult();
 ```
