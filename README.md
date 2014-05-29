@@ -2,12 +2,14 @@
 
 A PHP database connection class.
 
-## Useage
+## To begin...
 
 Create a new instance of the class
 ```
 $db = new Derb;
 ```
+
+## Useage
 
 **Select (Multiple)**
 ```
