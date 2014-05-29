@@ -9,7 +9,7 @@ Create a new instance of the class
 $db = new Derb;
 ```
 
-*Select (Multiple)*
+_Select (Multiple)_
 ```
 $db->select('p.name as personname', 'p.gender', 'f.name as familyname');
 $db->from('people as p');
