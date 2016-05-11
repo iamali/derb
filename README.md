@@ -1,8 +1,10 @@
-# Derb
+Derb
+===
 
 A PHP MySQL database connection class.
 
-## To begin...
+To begin...
+---------------
 
 Set your database details
 
@@ -18,7 +20,8 @@ Create a new instance of the class
 $db = new Derb;
 ```
 
-## Useage
+Useage
+---------------
 
 **Select (Multiple)**
 ```
